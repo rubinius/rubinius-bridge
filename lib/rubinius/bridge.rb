@@ -1,6 +1,6 @@
 require "rubinius/bridge/version"
 
-if RedCard.check :mri
+unless RedCard.check :rubinius
   require "rubinius/bridge/object"
   require "rubinius/bridge/array"
   require "rubinius/bridge/string"
