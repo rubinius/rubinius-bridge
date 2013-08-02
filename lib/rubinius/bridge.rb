@@ -1,3 +1,4 @@
+require "redcard"
 require "rubinius/bridge/version"
 
 unless RedCard.check :rubinius
