@@ -1,5 +1,5 @@
 # coding: utf-8
-require 'rubinius/bridge/version'
+require './lib/rubinius/bridge/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rubinius-bridge"
@@ -26,5 +26,5 @@ that are built into Rubinius.
   spec.add_runtime_dependency "redcard", "~> 1.0"
 
   spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", "~> 10.0"
 end
