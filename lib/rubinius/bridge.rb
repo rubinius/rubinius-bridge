@@ -7,6 +7,7 @@ unless RedCard.check :rubinius
   require "rubinius/bridge/string"
   require "rubinius/bridge/rubinius"
   require "rubinius/bridge/compiled_code"
+  require "rubinius/bridge/exception"
   require "rubinius/bridge/executable"
   require "rubinius/bridge/iseq"
   require "rubinius/bridge/lookup_table"
