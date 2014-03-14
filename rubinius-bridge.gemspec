@@ -15,7 +15,7 @@ code tools under MRI. To do so requires adding some classes and methods
 that are built into Rubinius.
   EOD
   spec.summary       = %q{Classes and methods to run other Rubinius tools under MRI.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/rubinius/rubinius-bridge"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
