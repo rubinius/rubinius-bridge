@@ -1,6 +1,6 @@
 module Rubinius
   class CompiledCode
-    KernelMethodSerial = 42
+    KernelMethodSerial = 47
 
     attr_accessor :hints         # added by the VM to indicate how it's being used.
     attr_accessor :metadata      # [Tuple]   extra data
