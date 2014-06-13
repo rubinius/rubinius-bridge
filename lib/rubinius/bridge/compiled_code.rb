@@ -16,20 +16,14 @@ module Rubinius
     attr_accessor :lines         # [Tuple]   tuple of the lines where its found
     attr_accessor :file          # [Symbol]  the file where this comes from
     attr_accessor :local_names   # [Array<Symbol>] names of the local vars
-    attr_accessor :scope
+    attr_accessor :scope         # [ConstantScope] scope for looking up constants
+    attr_accessor :keywords      # [Tuple] pairs of Symbol name, required flag
+    attr_accessor :arity         # [Integer] number of arguments, negative if variadic.
     attr_accessor :primitive
     attr_accessor :block_index
 
     def decode(bytecodes = @iseq)
       # TODO
-    end
-
-    def arity
-      if @required_args == @total_args and (@splat.nil? or @splat == -3)
-        @required_args
-      else
-        -(@required_args + 1)
-      end
     end
 
     def add_metadata(key, val)
