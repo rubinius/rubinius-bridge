@@ -12,7 +12,6 @@ module Rubinius
     attr_accessor :post_args     # [Integer] number of args after splat
     attr_accessor :total_args    # [Integer] number of total args
     attr_accessor :splat         # [Integer] POSITION of the splat arg
-    attr_accessor :literals      # [Tuple]   tuple of the literals
     attr_accessor :lines         # [Tuple]   tuple of the lines where its found
     attr_accessor :file          # [Symbol]  the file where this comes from
     attr_accessor :local_names   # [Array<Symbol>] names of the local vars
