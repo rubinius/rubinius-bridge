@@ -19,7 +19,6 @@ module Rubinius
     attr_accessor :scope         # [ConstantScope] scope for looking up constants
     attr_accessor :keywords      # [Tuple] pairs of Symbol name, required flag
     attr_accessor :arity         # [Integer] number of arguments, negative if variadic.
-    attr_accessor :literals_count # [Fixnum] number of literals in the instruction stream.
     attr_accessor :primitive
     attr_accessor :block_index
 
