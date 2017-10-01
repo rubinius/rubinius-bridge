@@ -1,5 +1,5 @@
 module Rubinius
   module Bridge
-    VERSION = "2.2"
+    VERSION = "3.0"
   end
 end
