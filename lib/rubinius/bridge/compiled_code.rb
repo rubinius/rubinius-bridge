@@ -1,3 +1,5 @@
+require "securerandom"
+
 module Rubinius
   class CompiledCode
     KernelMethodSerial = 47
@@ -22,8 +24,18 @@ module Rubinius
     attr_accessor :primitive
     attr_accessor :block_index
 
+    def initialize
+      @code_id = nil
+    end
+
     def decode(bytecodes = @iseq)
       # TODO
+    end
+
+    CODE_ID_BYTES = 32
+
+    def code_id
+      @code_id || (@code_id = SecureRandom.hex(CODE_ID_BYTES))
     end
 
     def add_metadata(key, val)
